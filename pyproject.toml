@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clustering-claim-audit"
+version = "0.1.0"
+description = "Offline audit of documented grouping capability against Python source"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.scripts]
+clustering-claim-audit = "clustering_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["clustering_claim_audit*"]
